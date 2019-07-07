@@ -30,7 +30,7 @@ header hgroup { width: 100%; font-weight:normal; }
 
 /* css for <nav> */
 nav {
-	display: block;
+	display: inline-block;
 	margin: 0 0 2em;
 	padding: 0px;
 	float: left;
