@@ -1,0 +1,98 @@
+body {
+    font-family: arial, sans-serif;
+    font-size: 100%; /* best for all browser using em */
+    padding:0; 
+    margin:0;
+}
+
+*, html { line-height: 1.6em; }
+
+article img { width:auto; max-width:100%; height:auto; }
+
+.sidebar a, article a, header a, footer a { color: #C30; }
+header a { text-decoration: none; }
+
+#wrapper {
+font-size: 0.8em; /* 13px from 100% global font-size */
+max-width: 960px; /* standard 1024px wide */
+margin: 0 auto;
+}
+
+/* css for <header> */
+header {
+	padding: 1em 0;
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+
+/* css for <nav> */
+nav {
+	display: inline-block;
+	margin: 0 0 2em;
+	padding: 0px;
+	width: 60%;
+	background-color: transparent;
+}
+
+nav ul {
+	padding: 0;
+	list-style: none;
+	position: relative;
+	margin: 0px;
+	float: left;
+	width: 100%;
+}
+nav ul:after {content: ""; clear: both; display: block;}
+
+nav li {
+	display: block;
+	float: left;
+	position: relative;
+}
+
+nav li:hover a {color: #fff;}
+
+nav li a {
+	display: block;
+	padding: 1em;
+	font-size: 1.125em;
+	color: #ccc;
+	text-decoration: none;
+	margin: 0px;
+	background-color: #000;
+	border-right: 1px solid #333;
+}
+nav li:last-of-type a {border-right: 1px solid transparent !important;}
+
+/* css for <section class='content'> */
+section.content { width: 70%; float:left; }
+.content article { width:100%; float:left; padding: 0 0 1em; margin: 0 0 1em; border-bottom: 1px solid #ddd; }
+article .entry { clear:both; padding: 0 0 1em; }
+h1.post-title { font-size: 1.8em; margin:0; padding:0;}
+.entry.post-meta { color: #888; }
+.entry.post-meta span { padding: 0 1em 0 0; }
+.entry.post-content { font-size: 1.125em; margin:0; padding:0;}
+
+/* css for <footer> */
+footer {
+	width: 98%;
+	float:left;
+	padding: 1%;
+	background-color: white;
+	margin-top: 2em;
+}
+
+/* ipad 768px */
+@media only screen and (min-width:470px) and (max-width:770px){
+    body { background-color: red; } /*lets add some background color so we know which dimension we're in */
+    #wrapper { width:96%; font-size: 0.6875em; }
+    section.content, aside.sidebar { width:100%; }
+    }
+    
+/* iphone 468px */
+@media only screen and (min-width:270px) and (max-width:470px){
+    body { background-color: yellow; } /*lets add some background color so we know which dimension we're in */
+    #wrapper { width:96%; font-size: 0.6875em; }
+    section.content, aside.sidebar { width:100%; }
+    }
