@@ -25,6 +25,11 @@ header {
 	float: left;
 	width: 100%;
 }
+/* css for branding */
+.branding {
+	display: inline-block;
+	width: 30%
+}
 
 /* css for <nav> */
 nav {
